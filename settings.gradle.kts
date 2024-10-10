@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AppUpdate"
 include(":app")
- 
+include(":appUpdate")
