@@ -1,4 +1,6 @@
-package com.example.appupdate
+package com.example.appupdate.listeners
+
+import com.example.appupdate.model.UpdateType
 
 interface AppUpdateLoadingListener {
     fun onUpdateAvailable(type: UpdateType)

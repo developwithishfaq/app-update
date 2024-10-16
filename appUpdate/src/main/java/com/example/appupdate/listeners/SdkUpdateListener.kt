@@ -1,4 +1,4 @@
-package com.example.appupdate
+package com.example.appupdate.listeners
 
 interface SdkUpdateListener {
     fun onUpdateFailed(reason: String)

@@ -1,4 +1,4 @@
-package com.example.appupdate
+package com.example.appupdate.model
 
 enum class UpdateType {
     Flexible,

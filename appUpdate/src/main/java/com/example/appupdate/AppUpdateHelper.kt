@@ -3,7 +3,6 @@ package com.example.appupdate
 import android.app.Activity
 import android.content.Context
 import android.content.IntentSender
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.result.ActivityResultCallback
@@ -12,6 +11,10 @@ import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.appupdate.extension.logAds
+import com.example.appupdate.listeners.AppUpdateLoadingListener
+import com.example.appupdate.listeners.SdkUpdateListener
+import com.example.appupdate.model.UpdateType
 import com.google.android.play.core.appupdate.AppUpdateInfo
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
@@ -183,12 +186,4 @@ class AppUpdateHelper {
         }
     }
 
-}
-
-fun logAds(message: String, isError: Boolean = false) {
-    if (isError) {
-        Log.e("adsPlugin", "Ads: $message")
-    } else {
-        Log.d("adsPlugin", "Ads: $message")
-    }
 }
